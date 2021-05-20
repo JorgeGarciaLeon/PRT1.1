@@ -14,6 +14,10 @@ public class contador {
     }
 
     public boolean comprobar(){
-        return false
+        if(valorInicial+incremento > valorLimite){
+            return false;
+        }else{
+            return true;
+        }
     }
 }
