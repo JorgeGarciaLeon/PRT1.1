@@ -29,5 +29,7 @@ public class contador {
         return this.valorInicial;
     }
 
-    
+    public int reset(){
+        return this.valorInicial;
+    }
 }
