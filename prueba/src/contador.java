@@ -17,7 +17,7 @@ public class contador {
     }
 
     public boolean comprobar(){
-        if(suma() > valorLimite){
+        if(valorActual > valorLimite){
             reset();
             return false;
         }else{
@@ -37,8 +37,9 @@ public class contador {
         return this.valorInicial;
     }
 
-    public int suma(){
-        return valorActual+incremento;
+    public void suma(){
+       valorActual+=incremento;
+        comprobar();
     }
 
 }

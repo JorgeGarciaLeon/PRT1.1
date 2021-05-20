@@ -13,9 +13,9 @@ public class testContador {
 
     @Test
     public void comprobarLimite(){
-        contador c = new contador(0,10,1);
-        boolean comproba = c.comprobar();
-        assertEquals(true, comproba);
+        contador c = new contador(0,15,5);
+        c.suma();
+        assertEquals(5, c.getValorActual());
     }
 
     @Test
