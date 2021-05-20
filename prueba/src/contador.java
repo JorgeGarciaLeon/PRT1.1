@@ -20,4 +20,8 @@ public class contador {
             return true;
         }
     }
+
+    public int volverValorInicial(){
+        return this.valorInicial;
+    }
 }

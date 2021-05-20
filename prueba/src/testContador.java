@@ -15,4 +15,11 @@ public class testContador {
         boolean comproba = c.comprobar();
         assertEquals(true, comproba);
     }
+
+    @Test
+    public void volverValorInicial(){
+        contador c = new contador(0,10,1);
+        int comproba = c.volverValorInicial();
+        assertEquals(1, comproba);
+    }
 }
