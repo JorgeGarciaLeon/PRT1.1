@@ -20,6 +20,13 @@ public class testContador {
     public void volverValorInicial(){
         contador c = new contador(0,10,1);
         int comproba = c.volverValorInicial();
-        assertEquals(1, comproba);
+        assertEquals(0, comproba);
+    }
+
+    @Test
+    public void verValorActual(){
+        contador c = new contador(0,10,1);
+        int comproba = c.getValorActual();
+        assertEquals(0, comproba);
     }
 }

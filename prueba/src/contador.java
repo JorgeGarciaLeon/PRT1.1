@@ -24,4 +24,8 @@ public class contador {
     public int volverValorInicial(){
         return this.valorInicial;
     }
+
+    public int getValorActual(){
+        return 10;
+    }
 }
