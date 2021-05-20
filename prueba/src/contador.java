@@ -1,20 +1,24 @@
 public class contador {
-    public static int valorInicial = 0;
-    public static int valorLimite = 10;
-    public static int incremento = 1;
+    public static int valorInicial;
+    public static int valorLimite;
+    public static int incremento;
+    public int valorActual;
 
-    public contador(){
-
+    public contador(int limit){
+        this.valorLimite = limit;
+        this.valorInicial = 0;
     }
 
     public contador(int valorInicial, int valorLimite, int incremento){
         this.valorInicial = valorInicial;
         this.valorLimite = valorLimite;
         this.incremento = incremento;
+        this.valorActual = valorInicial;
     }
 
     public boolean comprobar(){
-        if(valorInicial+incremento > valorLimite){
+        if(valorActual > valorLimite){
+            reset();
             return false;
         }else{
             return true;
@@ -26,10 +30,16 @@ public class contador {
     }
 
     public int getValorActual(){
-        return this.valorInicial;
+        return this.valorActual;
     }
 
     public int reset(){
         return this.valorInicial;
     }
+
+    public void suma(){
+       valorActual+=incremento;
+        comprobar();
+    }
+
 }

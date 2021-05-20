@@ -1,4 +1,5 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import  org.junit.*;
 
@@ -6,14 +7,15 @@ public class testContador {
     
     @Test
     public void comprobarConstructor(){
-        contador c = new contador();
+        contador c = new contador(10);
+        assertNotNull(c);
     }
 
     @Test
     public void comprobarLimite(){
-        contador c = new contador(0,10,1);
-        boolean comproba = c.comprobar();
-        assertEquals(true, comproba);
+        contador c = new contador(0,15,5);
+        c.suma();
+        assertEquals(5, c.getValorActual());
     }
 
     @Test
