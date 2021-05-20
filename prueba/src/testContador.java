@@ -27,6 +27,6 @@ public class testContador {
     public void verValorActual(){
         contador c = new contador(0,10,1);
         int comproba = c.getValorActual();
-        assertEquals(1, comproba);
+        assertEquals(0, comproba);
     }
 }
