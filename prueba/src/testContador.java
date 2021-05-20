@@ -1,4 +1,5 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import  org.junit.*;
 
@@ -6,7 +7,8 @@ public class testContador {
     
     @Test
     public void comprobarConstructor(){
-        contador c = new contador();
+        contador c = new contador(10);
+        assertNotNull(c);
     }
 
     @Test
