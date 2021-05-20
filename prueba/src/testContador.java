@@ -29,4 +29,11 @@ public class testContador {
         int comproba = c.getValorActual();
         assertEquals(0, comproba);
     }
+
+    @Test
+    public void resetValor(){
+        contador c = new contador(0,10,1);
+        int comproba = c.getValorActual();
+        assertEquals(0, comproba);
+    }
 }

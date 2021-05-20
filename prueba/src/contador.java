@@ -28,4 +28,6 @@ public class contador {
     public int getValorActual(){
         return this.valorInicial;
     }
+
+    
 }
