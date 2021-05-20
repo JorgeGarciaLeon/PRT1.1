@@ -12,4 +12,8 @@ public class contador {
         this.valorLimite = valorLimite;
         this.incremento = incremento;
     }
+
+    public boolean comprobar(){
+        return false
+    }
 }
